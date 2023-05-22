@@ -17,24 +17,24 @@ public class ProjectConfig {
         return 10;
     }
 
-    @Bean
+    @Bean(name = "koko")
     Parrot parrot() {
         var p = new Parrot();
         p.setName("Koko");
         return p;
     }
 
-    @Bean
+    @Bean(name = "miki")
     Parrot parrot2() {
         var p = new Parrot();
-        p.setName("Koko");
+        p.setName("Miki");
         return p;
     }
 
-    @Bean
+    @Bean(name = "riki")
     Parrot parrot3() {
         var p = new Parrot();
-        p.setName("Miki");
+        p.setName("Riki");
         return p;
     }
 }
